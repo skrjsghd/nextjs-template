@@ -12,7 +12,7 @@ const config: Config = {
     extend: {
       colors: {
         p: Colors.blue,
-        m: Colors.stone,
+        m: Colors.zinc,
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {

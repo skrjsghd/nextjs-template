@@ -9,11 +9,11 @@
     --primary: theme("colors.p.700");
     --primary-foreground: theme("colors.p.50");
     --muted: theme("colors.m.100");
-    --muted-foreground: theme("colors.m.700");
+    --muted-foreground: theme("colors.m.500");
     --border: theme("colors.m.200");
     --ring: var(--primary);
 
-    --radius: 1rem;
+    --radius: 0.5rem;
   }
 
   .dark {
@@ -22,7 +22,7 @@
     --primary: theme("colors.p.50");
     --primary-foreground: theme("colors.p.700");
     --muted: theme("colors.m.800");
-    --muted-foreground: theme("colors.m.200");
+    --muted-foreground: theme("colors.m.400");
     --border: theme("colors.m.400");
     --ring: var(--primary);
   }
