@@ -3,6 +3,7 @@ import * as Mini from "@heroicons/react/20/solid";
 import * as Outline from "@heroicons/react/24/outline";
 import * as React from "react";
 import { cva } from "class-variance-authority";
+import { cn } from "@/lib/utils";
 
 const iconVariants = cva("", {
   variants: {
@@ -31,7 +32,7 @@ const Icon: React.FC<IconProps> = ({
   ...props
 }) => {
   const Component = variant === "solid" ? Solid[name] : Outline[name];
-  const classes = iconVariants({ variant, className });
+  const classes = cn(iconVariants({ variant, className }));
   if (variant === "mini") {
     const Comp = Mini[name];
     return <Comp className={classes} {...props} />;
