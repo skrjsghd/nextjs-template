@@ -1,34 +1,12 @@
-import { Button, Icon } from "@/components";
+import { Checkbox } from "@/components/checkbox";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="grid h-dvh grid-cols-2">
-      <div className="flex flex-col items-start gap-4 p-4">
-        <h1>라이트 모드</h1>
-        <Button size={"sm"}>Click me</Button>
-        <Button>Click me</Button>
-        <Button size={"lg"}>Click me</Button>
-        <Button size={"icon"}>
-          <Icon name="HandThumbUpIcon" />
-        </Button>
-        <Button variant={"outline"}>Click me</Button>
-        <Button variant={"secondary"}>Click me</Button>
-        <Button variant={"ghost"}>Click me</Button>
-        <Button variant={"link"}>Click me</Button>
-      </div>
-      <div className="dark flex flex-col items-start gap-4 bg-background p-4 text-foreground">
-        <h1>다크모드</h1>
-        <Button size={"sm"}>Click me</Button>
-        <Button>Click me</Button>
-        <Button size={"lg"}>Click me</Button>
-        <Button size={"icon"}>
-          <Icon name="HandThumbUpIcon" />
-        </Button>
-        <Button variant={"outline"}>Click me</Button>
-        <Button variant={"secondary"}>Click me</Button>
-        <Button variant={"ghost"}>Click me</Button>
-        <Button variant={"link"}>Click me</Button>
-      </div>
-    </main>
+    <div className="flex flex-col items-start gap-4 p-4">
+      <Link href="/button">버튼</Link>
+      <Link href="/label">라벨</Link>
+      <Link href="/checkbox">체크박스</Link>
+    </div>
   );
 }
