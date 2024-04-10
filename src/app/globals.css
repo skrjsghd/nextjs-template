@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: theme("colors.white");
+    --foreground: theme("colors.m.900");
+    --primary: theme("colors.p.700");
+    --primary-foreground: theme("colors.p.50");
+    --muted: theme("colors.m.100");
+    --muted-foreground: theme("colors.m.700");
+    --border: theme("colors.m.200");
+    --ring: var(--primary);
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: theme("colors.m.900");
+    --foreground: theme("colors.m.50");
+    --primary: theme("colors.p.50");
+    --primary-foreground: theme("colors.p.700");
+    --muted: theme("colors.m.800");
+    --muted-foreground: theme("colors.m.200");
+    --border: theme("colors.m.400");
+    --ring: var(--primary);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+}
