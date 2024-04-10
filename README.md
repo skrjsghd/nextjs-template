@@ -4,12 +4,12 @@
 
 - [ ] Accordion
 - [x] Button
-- [ ] Checkbox
+- [x] Checkbox
 - [ ] Dialog
 - [ ] Drawer
 - [x] Icon
 - [ ] Input
-- [ ] Label
+- [x] Label
 - [ ] Pagination
 - [ ] Popover
 - [ ] Select
