@@ -2,18 +2,18 @@
 
 ## Components
 
-- [] Accordion
+- [ ] Accordion
 - [x] Button
-- [] Checkbox
-- [] Dialog
-- [] Drawer
+- [ ] Checkbox
+- [ ] Dialog
+- [ ] Drawer
 - [x] Icon
-- [] Input
-- [] Label
-- [] Pagination
-- [] Popover
-- [] Select
-- [] Switch
-- [] Tabs
-- [] Textarea
-- [] Toast
+- [ ] Input
+- [ ] Label
+- [ ] Pagination
+- [ ] Popover
+- [ ] Select
+- [ ] Switch
+- [ ] Tabs
+- [ ] Textarea
+- [ ] Toast
