@@ -1,12 +1,18 @@
-import { Checkbox } from "@/components/checkbox";
 import Link from "next/link";
+import fs from "node:fs";
 
-export default function Home() {
+export default async function Home() {
+  const files = fs
+    .readdirSync("./src/app", { recursive: true })
+    .filter((v) => !v.includes("."));
+
   return (
     <div className="flex flex-col items-start gap-4 p-4">
-      <Link href="/button">버튼</Link>
-      <Link href="/label">라벨</Link>
-      <Link href="/checkbox">체크박스</Link>
+      {files.map((href, i) => (
+        <Link key={i} href={`/${href}`}>
+          {href}
+        </Link>
+      ))}
     </div>
   );
 }
