@@ -8,12 +8,12 @@
 - [ ] Dialog
 - [ ] Drawer
 - [x] Icon
-- [ ] Input
+- [x] Input
 - [x] Label
 - [ ] Pagination
 - [ ] Popover
 - [ ] Select
 - [ ] Switch
 - [ ] Tabs
-- [ ] Textarea
+- [x] Textarea
 - [ ] Toast
