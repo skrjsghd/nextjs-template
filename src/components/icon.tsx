@@ -40,5 +40,6 @@ const Icon: React.FC<IconProps> = ({
 
   return <Component className={classes} {...props} />;
 };
+Icon.displayName = "Icon";
 
 export { Icon };
